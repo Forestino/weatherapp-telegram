@@ -1,0 +1,90 @@
+:root{
+	--font-family-ang:"Baloo 2", sans-serif;
+	--font-family-cyr: "Montserrat Alternates", sans-serif;
+
+	--color-card:rgba(255, 255, 255, 0.5);
+	--color-font: #757575;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body{
+	font-family: var(--font-family-ang);
+	font-weight: 500;
+	font-size: 16px;
+	color: #212121;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 320px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	outline: 1px dotted deeppink;
+	background: linear-gradient(
+    #FFA26D 0%, 
+    #BD4B44 50%, 
+    #4B0601 100%);
+}
+.container__input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 290px;
+	height: 50px;
+	background-color:var(--color-card);
+
+	border-radius: 10px;
+}
+.input{
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+}
+.container__input--text{
+	font-family: var(--font-family-cyr);
+	font-weight: 400;
+	color: var(--color-font);
+	margin-right: 10px;
+}
+.container__weather--info{
+	width: 280px;
+	height: 150px;
+	background-color:var(--color-card);
+	border-radius: 10px;
+}
+.weather__list{
+padding: 20px 20px;
+}
+.temperature,
+.humidity,
+.wind{
+	display: flex;
+	align-items: center;
+	outline: 1px dotted deeppink;
+
+}
+.box{
+	display: flex;
+	gap: 10px;
+}
+.container__box1,
+.container__box2,
+.container__box3{
+	width: 85px;
+	height: 85px;
+	background-color: var(--color-card);
+	border-radius: 10px;
+
+}
